@@ -15,3 +15,5 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+!!! note
+    The `docs` directory is the only directory that should contain Markdown files. Other files will be ignored.
