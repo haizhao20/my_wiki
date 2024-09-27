@@ -4,7 +4,7 @@ site_author: haizh
 
 theme:
   name: material
-  custom_dir: overrides
+  # custom_dir: overrides
   font:
     text: Roboto
     code: Roboto Mono
@@ -66,9 +66,9 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-extra:
-  - stylesheets/extra.css
-  - javascripts/extra.js
+# extra:
+#   - stylesheets/extra.css
+#   - javascripts/extra.js
 nav:
   - Home: index.md
   - About: about.md
