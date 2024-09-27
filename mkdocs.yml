@@ -1,1 +1,9 @@
 site_name: My Docs
+theme:
+    name: material
+    logo:
+        icon: mywiki
+    palette:
+        primary: black
+        accent: white
+    language: zh
