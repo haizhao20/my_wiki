@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: My Note
 site_url: https://haizhao20.github.io/my_wiki/
 site_author: haizh
 
@@ -73,4 +73,5 @@ nav:
   - Home: index.md
   - About: about.md
   - Note:
-    - 计算机网络: note/computernet.md
+    - 计算机网络: 
+      - 第一章: note/计算机网络/chapter_1.md
