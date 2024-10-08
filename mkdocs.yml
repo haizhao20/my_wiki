@@ -69,20 +69,17 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
-# extra_javascipt:
-  # - docs/javascripts/katex.js
-  # - https://unpkg.com/katex@0/dist/katex.min.js
-  # - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-  # - docs/javascripts/mathjax.js
-  # - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+# extra_javascript:
+#  - https://polyfill.io/v3/polyfill.min.js?features=es6
+#  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 
 
 # extra_css:
-#   - https://unpkg.com/katex@0/dist/katex.min.css
+#   - https://unpkg.com/browse/katex@0.16.11/dist/katex.min.css
 # extra:
 #   - stylesheets/extra.css
 #   - javascripts/extra.js
