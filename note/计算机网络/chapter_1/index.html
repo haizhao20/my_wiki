@@ -1,0 +1,1651 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="haizh">
+      
+      
+        <link rel="canonical" href="https://haizhao20.github.io/my_wiki/note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/chapter_1/">
+      
+      
+        <link rel="prev" href="../../../about/">
+      
+      
+        <link rel="next" href="../../CPU/instruction/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>第一章 - My Note</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="My Note" class="md-header__button md-logo" aria-label="My Note" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Note
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第一章
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Note
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="My Note" class="md-nav__button md-logo" aria-label="My Note" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Note
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Note
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Note
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计算机网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            计算机网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第一章
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第一章
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 计算机网络在信息时代中的应用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 互联网概述
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 互联网概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.1 网络的网络
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.2 互联网基础结构发展的三个阶段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.3 互联网的标准化工作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 互联网的组成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 互联网的组成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.1 边缘部分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.2 互联网的核心部分
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 计算机网络在我国的发展（简单了解即可）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 计算机网络的定义
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5 计算机网络的定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.1 计算机网络的定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2 几种不同类别的计算机网络
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 计算机网络的性能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6 计算机网络的性能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1 计算机网络的性能指标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2 计算机网络的非性能特征
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 计算机网络体系结构
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.7 计算机网络体系结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#171" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.1 计算机网络体系结构的形成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.2 协议与划分层次
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#173" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.3 具有五层协议的体系结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#174" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.4 实体、协议、服务和服务访问点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#175-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.5 TCP/IP 的体系结构
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CPU 学习
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            CPU 学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CPU/instruction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    指令系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 计算机网络在信息时代中的应用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 互联网概述
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 互联网概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.1 网络的网络
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.2 互联网基础结构发展的三个阶段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.3 互联网的标准化工作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 互联网的组成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 互联网的组成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.1 边缘部分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.2 互联网的核心部分
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 计算机网络在我国的发展（简单了解即可）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 计算机网络的定义
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5 计算机网络的定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.1 计算机网络的定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2 几种不同类别的计算机网络
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 计算机网络的性能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6 计算机网络的性能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1 计算机网络的性能指标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2 计算机网络的非性能特征
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 计算机网络体系结构
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.7 计算机网络体系结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#171" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.1 计算机网络体系结构的形成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.2 协议与划分层次
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#173" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.3 具有五层协议的体系结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#174" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.4 实体、协议、服务和服务访问点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#175-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.5 TCP/IP 的体系结构
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">第一章 概述</h1>
+<h2 id="11">1.1 计算机网络在信息时代中的应用</h2>
+<ol>
+<li>21 世纪的主要特征是<strong>数字化，网络化，信息化</strong>，是一个<strong>以网络为核心的信息时代</strong>。</li>
+<li>三大类网络：<ul>
+<li>电信网络：向用户提供电话，电报及传真等服务；</li>
+<li>有线电视网络：向用户传送各种电视节目；</li>
+<li>计算机网络：是用户能够在计算机之间传送数据文件。
+这三种网络中发展最快，起着核心作用的是计算机网络。  </li>
+</ul>
+</li>
+<li>Internet 的译名：<ul>
+<li>因特网：由全国科学技术名词审定委员会推荐；</li>
+<li>互联网：由于 Internet 是由数量极大的各种计算机网络互连起来的，采用这个名字能够体现出 Internet 最主要的特征。</li>
+</ul>
+</li>
+<li>互联网本来就是<strong>覆盖全球的</strong>，仅在<strong>局部范围</strong>互连起来的计算机网络，只能称之为互连网。</li>
+<li>互联网之所以能够向用户提供很多服务，是因为两个重要的基本特点：<strong>连通性</strong>和<strong>共享</strong>：<ul>
+<li>连通性：用户不管相距多远，都能够非常便捷和经济地交换各种信息（但是互联网具有虚拟的特点，无法知道对方的真实身份）</li>
+<li>共享：就是指资源共享。可以指信息，软件也可以是硬件共享。由于网络的存在，这些资源就好像在用户身边一样。</li>
+</ul>
+</li>
+<li>互联网+：
+    就是指“互联网+各个传统行业”，利用信息通信技术和互联网平台来创造新的发展生态。</li>
+<li>负面影响：<ul>
+<li>利用互联网传播病毒，破坏数据的正常传送和交换；</li>
+<li>利用互联网窃取国家机密和盗窃银行和账户的钱财；</li>
+<li>电信诈骗，网络谣言，不良信息和不健康的视频节目；</li>
+<li>青少年沉迷网络游戏。</li>
+</ul>
+</li>
+</ol>
+<h2 id="12">1.2 互联网概述</h2>
+<h3 id="121">1.2.1 网络的网络</h3>
+<ol>
+<li>现在世界上最大的覆盖全球的计算机网络起源于美国的互联网。</li>
+<li><strong>计算机网络</strong>（简称<strong>网络</strong>）由若干<strong>节点</strong>和连接这些节点的<strong>链路</strong>组成：<ul>
+<li>节点：可以是计算机，集线器，交换机或路由器。</li>
+</ul>
+</li>
+<li><strong>互连网</strong>：有多个网络通过一些路由器互相连接起来，构成了一个覆盖范围更大的计算机网络。因此互连网是<strong>“网络的网络”</strong>。</li>
+<li>主机：与网络相连的计算机。在互连网中不可缺少的路由器，是一种特殊的计算机（有中央处理器，存储器，操作系统等），但不能称为主机。</li>
+<li>基本概念：<strong>网络把许多计算机连接在一起，而互连网则是把许多网络通过一些路由器连接在一起。与网络相连的计算机常称为主机。</strong></li>
+<li>网络互连：不仅仅是把计算机在物理上连接起来，这样并不能达到计算机相互交换信息的目的，必须在计算机上安装许多使计算机能够交换信息的软件。</li>
+</ol>
+<h3 id="122">1.2.2 互联网基础结构发展的三个阶段</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">第一阶段：从单个网络 ARPANET -&gt; 互连网</label><label for="__tabbed_1_2">第二阶段：建成了<strong>三级结构的互联网</strong></label><label for="__tabbed_1_3">第三阶段：逐渐形成了<strong>全球范围内的多层次 ISP 结构的互联网</strong></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>1969 年，美国国防部创建的第一个分组交换网 ARPANET 最初只是一个单一的分组交换网。所有要连接在 ARPANET 上的主机都直接与就近的节点交换机相连。</li>
+<li>在 20 世纪 70 年代，ARPA 开始研究多种网络互连的技术（如分组无线电网络），导致了互联网络的出现，是现今<strong>互连网</strong>的雏形。</li>
+<li>1983 年 TCP/IP 协议成为 ARPANET 上的标准协议，使得所有使用 TCP/IP 协议的计算机都能利用互连网相互通信。</li>
+<li>1983 年是互联网的诞生时间。</li>
+<li>1990 年 ARPANET 正式宣布关闭。</li>
+<li>internet（互连网）是一个通用名词，它泛指由多个计算机网络互连而成的计算机网络。在这些网络之间的通信协议可以任意选择。</li>
+<li>Internet（互联网/因特网）则是一个专用名词，指的是当前全球最大的，开放的，由众多网络相互连接而成的特定互连网，它采用 TCP/IP 协议族作为通信的规则，且前身是美国的 ARPANET。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>可见，把任意几个计算机网络互连起来（不管采用什么协议），并能够互相通信，这样构成的是一个互连网，而不是互联网。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>1985 年起，美国国家科学基金会 NSF 围绕六个大型计算机中心建设计算机网络 —— 国家科学基金网 NSFNET。<ul>
+<li>是一个三级网络，分为<strong>主干网、地区网和校园网（企业网）</strong>。覆盖了全美国主要的大学和研究所，成为互联网中的主要组成部分。</li>
+</ul>
+</li>
+<li>1991 年，NSF 和 其他美国政府机构，将互联网的主干网转交给私人公司来经营，开始对接入互联网的单位收费。<ul>
+<li>1992 年互联网上的主机超过 100 万台。1993 年互联网主干网的速率提高到 45 Mbit/s（T3速率）。</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>也就是说，互联网在这时才真正出现。</p>
+</div>
+<details class="question">
+<summary>为什么使用这种三级结构</summary>
+<p>是因为互联网必须能够让连接到互联网的所有用户能够互相通信。一个普通的校园网或者企业网很难做到，实现需要巨大的投资。地区网让本地区管辖范围内的各校园网或企业网之间相互通信，而主干网使不同地区之间的用户和相互通信。</p>
+</details>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>1993 年开始，NSFNET 逐渐被各个商用的<strong>互联网主干网</strong>替代，政府机构不再负责互联网的运营。<ul>
+<li>出现了一个新的名词：<strong>互联网服务提供者 ISP</strong>（Internet Service Provider），又叫网络服务提供商。</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>中国电信、中国联通和中国移动等公司都是我国最有名的 ISP。</p>
+</div>
+</li>
+<li>ISP 可以从互联网管理机构申请到很多 IP 地址（互联网上的主机都必须有 IP 地址才能上网），同时拥有通信线路（大 ISP 自己建造通信线路，小 ISP 向电信公司租用通信线路）以及路由器等连网设备，因此任何机构和个人只要向某个 ISP 交纳规定的费用，就可从该 ISP 获取所需 IP 地址的租用权，并可通过该 ISP 接入互联网。IP 地址的管理机构会把整块的 IP 地址有偿租赁给经审查合格的 ISP。现在的互联网是全世界大大小小的 ISP 所共同拥有的，这就是互联网也称为<strong>“网络的网络”</strong>的原因。  </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>所谓“上网”就是指“（通过某 ISP 获得的 IP 地址）接入互联网”。</p>
+</div>
+<ul>
+<li>根据提供服务范围的覆盖面积大小以及所拥有的 IP 地址数目的不同，ISP 分为三个层次：<ul>
+<li>主干 ISP：<ul>
+<li>只有十几个；</li>
+<li>由几个专门的公司创建和维护，服务面积最大（一般都能够覆盖国家范围），并且拥有高速主干网（例如 10 Gbit/s 或更高）。不同的网络运营商都有自己的主干 ISP 网络，并且可以彼此互通。</li>
+</ul>
+</li>
+<li>地区 ISP：<ul>
+<li>一些较小的 ISP；</li>
+<li>通过一个或多个主干 ISP 连接起来。它们位于等级中的第二层，数据率也低一些。</li>
+</ul>
+</li>
+<li>本地 ISP：<ul>
+<li>给用户提供直接的服务（这些用户有时也称为端用户，强调是末端的用户）。</li>
+<li>本地 ISP 可以连接到地区 ISP，也可以直接连接到主干 ISP。绝大多数的用户都是连接到本地 ISP 的。本地 ISP 可以是一个仅仅提供互联网服务的公司，也可以是一个提供网络并向自己的雇员提供服务的企业，或者是一个运行自己的网络的非营利机构（如学院或大学）。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">随着互联网上数据流量的急剧增长，应当如何更快的转发分组，以及如何更加有效和更加经济地利用网络资源</p>
+</div>
+<ul>
+<li><strong>互联网交换点 IXP</strong> 应运而生<ul>
+<li>主要作用就是允许两个网络直接相连并交换分组，不需要再通过第三个网络来转发分组。</li>
+<li>使得互联网上的数据流量分布更加合理，减少了分组转发的迟延时间，降低了分组转发的费用。</li>
+<li>许多 IXP 在进行对等交换分组时，都互相不收费，但是本地 ISP 或地区 ISP 通过 IXP 向高层的 IXP 转发分组时，则需要交纳一定的费用。</li>
+<li>典型的 IXP 由一个或多个网络交换机组成，许多 ISP 再连接到这些网络交换机的相关端口上。IXP 常采用工作在数据链路层的网络交换机，这些网络交换机都用局域网互连起来。</li>
+<li>目前互联网上最主要的流量就是视频文件的传送。<strong>内容提供者</strong>是在互联网上向所有用户提供视频文件的公司。由于传送视频文件产生的流量非常大，为了提高数据传送的效率，这些公司都有独立于互联网的专门网络（仅承载出入该公司的服务器的流量），并且能够和各级 ISP 以及 IXP 相连。这就使得互联网上的所有用户能够更加方便地观看网上的各种视频节目。</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<p>互联网已经成为世界上规模最大和增长速度最快的计算机网络。由欧洲原子核研究组织 CERN 开发的<strong>万维网 WWW（World Wide Web）</strong>被广泛使用在互联网上，大大方便了广大非网络专业人员对网络的使用。</p>
+<h3 id="123">1.2.3 互联网的标准化工作</h3>
+<p>互联网的标准化工作对互联网的发展起到了非常重要的作用。但是国际标准的制定是一个非常复杂的问题，这里既有很多技术问题，也有很多非技术问题，如不同厂商之间经济利益的争夺问题，标准制定的时机也很重要。  </p>
+<ul>
+<li>1992 年由于互联网不再归美国政府管辖，因此成立了一个国际性组织叫做<strong>互联网协会</strong>（ISOC），ISOC 下面有一个技术组织叫做<strong>互联网体系结构委员会 IAB</strong>，负责管理互联网有关协议的开发。IAB 下面又设有两个工程部：<ol>
+<li><strong>互联网工程开发部 IETF</strong>
+    <strong>IETF</strong> 是由许多<strong>工作组 WG</strong>（Working Group）组成的论坛，具体工作由<strong>互联网工程指导小组 IESG</strong>管理。这些工作划分为若干个领域，每个领域集中研究某一特定的短期和中期的工程问题，主要针对协议的开发和标准化。</li>
+<li><strong>互联网研究部 IRTF</strong><br />
+<strong>IRTF</strong> 是由一些<strong>研究组 RG</strong>（Research Group）组成的论坛，具体工作由<strong>互联网研究指导小组 IRSG</strong>管理。<strong>IRTF</strong> 的任务是研究一些需要长期考虑的问题，包括互联网的一些协议、应用、体系结构等。        </li>
+</ol>
+</li>
+<li>互联网制定其标准时有一个很大的特点就是面向公众。所有的互联网标准都是以 RFC（请求评论） 的形式在互联网上发表的。这种开放方式对互联网的迅速发展影响很大。并非所有的 RFC 文档都是互联网标准，只有很少部分的最后能变成互联网标准。RFC 文档按发表时间的先后编上序号（即 RFC xxxx），一个 RFC 文档更新后就使用一个新的编号，并在文档中指出原来老编号的 RFC 文档已成为陈旧的或被更新，但陈旧的 RFC 文档不会被删除，会永远保留着。</li>
+<li>制定互联网的正式标准的三个阶段：<ul>
+<li><strong>互联网草案</strong>（Iternet Draft）：互联网草案的有效期只有 6 个月。在这个阶段还不能算是 RFC 文档。</li>
+<li><strong>建议标准</strong>（Proposed Standard）：从这个阶段开始就成为 RFC 文档。</li>
+<li><strong>互联网标准</strong>（Internet Standard）：如果经过长期的检验，证明了某个建议标准可以成为互联网标准，就给它分配一个标准编号，记为 STDxx（standard），一个互联网标准可以和多个 RFC 文档关联。</li>
+</ul>
+</li>
+</ul>
+<h2 id="13">1.3 互联网的组成</h2>
+<p>互联网在地理上覆盖了全球，但从其工作方式上看，可以划分为以下两大块：  </p>
+<ul>
+<li><strong>边缘部分</strong> 有所有连接在互联网上的主机组成，这部分是<strong>用户直接使用的</strong>，用来进行通信和资源共享。</li>
+<li><strong>核心部分</strong> 由大量网络和连接这些网络的路由器组成。这部分是<strong>为边缘部分提供服务的</strong>。</li>
+</ul>
+<h3 id="131">1.3.1 边缘部分</h3>
+<ol>
+<li>处在互联网边缘的部分就是连接在互联网上的所有的主机。这些主机又称为<strong>端系统</strong>。</li>
+<li>小的端系统可以是一台普通的个人电脑，也可以是智能手机，甚至是很小的网络摄像头，而大的端系统则可以是一台非常昂贵的大型计算机（通常称为<strong>服务器 server</strong>）。</li>
+<li>端系统的拥有者可以是个人，单位也可以是某个 ISP。</li>
+<li>
+<p>现今大部分可以向网民提供信息检索，万维网浏览以及视频播放等功能的服务器，都不再是一个服务器，而是属于某个大型数据中心.  </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>谷歌公司（Google）拥有上百个数据中心，而其中的 15 个大型数据中心，每一个都有 10 万台以上的服务器。我国的百度公司在山西阳泉建造的数据中心拥有 16 万台服务器。  </p>
+</div>
+</li>
+<li>
+<p>“主机 A 和主机 B 进行通信”实际上是指：“运行在主机 A 上的某个程序和运行在主机 B 上的另一个程序进行通信”。“进程”就是“运行着的程序”。因此这也就是指：<strong>“主机 A 的某个进程和主机 B 上的另一个进程进行通信”</strong>。简称为<strong>“计算机之间通信”</strong>。</p>
+</li>
+<li>在网络边缘的端系统之间的通信方式分为两大类：<ul>
+<li><strong>客户-服务器方式（C/S 方式）</strong><ul>
+<li>最常用的，最传统的方式。</li>
+<li>计算机通信的对象是应用层中的应用进程。</li>
+<li><strong>客户（client）</strong>和<strong>服务器（server）</strong>都是指通信中所涉及的两个应用进程。客户-服务器方式所描述的是进程之间服务和被服务的关系。</li>
+<li><strong>客户是服务请求方，服务器是服务提供方</strong>。</li>
+<li>在实际应用中，客户程序和服务器程序还通常具有以下特点：<ul>
+<li>客户程序：  <ol>
+<li>被用户调用后运行，在通信时主动向远地服务器发起通信（请求服务），客户程序必须知道服务器程序的地址。</li>
+<li>不需要特殊的硬件和很复杂的操作系统。</li>
+</ol>
+</li>
+<li>服务程序：<ol>
+<li>一种专门用来提供某种服务的程序，<strong>可同时处理</strong>多个远地或本地客户的请求。</li>
+<li>系统启动后即一直不断地运行着，被动地等待并接受来自各自的客户的通信请求。</li>
+<li>一般需要有强大的硬件和高级的操作系统支持。
+客户与服务器的通信关系建立后，通信可以是双向的，客户和服务器都可发送和接受数据。  </li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上面所说的<strong>客户和服务器本来都指的是计算机进程（软件）</strong>。使用计算机的人是计算机的“用户（user）”而不是“客户（client）”。很多国外文献，把运行客户程序的<strong>机器</strong>称为 client（客户机），运行服务器程序的<strong>机器</strong>也称为 server。所以需要根据上下文判断是软件还是硬件。</p>
+</div>
+<ul>
+<li><strong>对等连接方式（P2P 方式）</strong><ul>
+<li><strong>对等连接</strong>是指两台主机在通信时，并不区分谁是服务请求方或谁是服务提供方，只要双方都运行了对等连接软件（P2P 软件），它们就可以平等的对等连接通信，都可以下载对方存储在硬盘中的共享文档。  </li>
+<li>实际上本质上对等连接方式仍然是客户-服务器方式，只是对等连接的主机既是客户同时又是服务器。</li>
+<li>对等连接工作方式可支持大量对等用户（如上百万个）同时工作。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="132">1.3.2 互联网的核心部分</h3>
+<p>网络核心部分是互联网中最复杂的部分，因为网络中的核心部分要向网络边缘部分中的大量主机提供连通性，使边缘部分中的任何一台主机都能够与其他主机通信。<br />
+在网络核心部分起特殊作用的是<strong>路由器（router）</strong>，是一种专用计算机（不是主机）。路由器是实现<strong>分组交换（packet switching）</strong>的关键构件，其任务是<strong>转发收到的分组</strong>，这是网络核心部分最重要的功能。  </p>
+<ul>
+<li>
+<p><strong>电路交换的主要特点</strong></p>
+<ul>
+<li>从通信资源的分配角度来看，<strong>交换</strong>就是按照某种方式动态地分配传输线路的资源。在一次通话过程中经历了三个阶段 —— <strong>“建立连接（占用通信资源）-&gt; 通话（一直占用通信资源）-&gt; 释放连接（归还通信资源）”</strong>，这种交换方式称为<strong>电路交换</strong>。</li>
+<li><strong>在通话的全部时间内，通话的两个用户始终占用端到端的通信资源</strong>。  </li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>使用电路交换来传送计算机数据，<strong>线路的传输效率往往很低</strong>，这是因为计算机数据是突发式地出现在传输线路上的，线路经常被占用但是用来传输数据的时间往往不到 10%。  </p>
+</div>
+</li>
+<li>
+<p><strong>分组交换的主要特点</strong>  </p>
+<ul>
+<li>分组交换采用<strong>存储转发</strong>技术。</li>
+<li>通常我们把要发送的整块数据称为一个<strong>报文（message）</strong>。</li>
+<li>在发送报文之前，先把较长的报文划分成一个个更小的等长数据段。  </li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>每个数据段为 1024 bit。在每一个数据段前面，加上一些必要的控制信息组成的<strong>首部（header）（包头）</strong>，就构成了一个<strong>分组（packet）（包）</strong>。</p>
+</div>
+<ul>
+<li>分组是在互联网中传送的数据单元。分组的“首部”非常重要，包含了诸如目标地址和源地址等重要控制信息，每一个能够在互联网中独立地选择传输路径，并被正确地交付到分组传输的终点。  </li>
+<li><strong>主机</strong>和<strong>路由器</strong>作用：  <ul>
+<li>主机：是<strong>为用户进行信息处理的</strong>，并且可以和其他主机通过网络交换信息。</li>
+<li>路由器：<strong>用来转发分组（分组交换）</strong>。  </li>
+</ul>
+</li>
+<li>数据传输过程：<br />
+    路由器收到分组，暂时存储后，检查首部，查找转发表，按照首部中的目标地址，找到合适的接口转发出去，把分组交给下个路由器，到最终的主机之前，可能需要经过很多个路由器。各个路由器必须经常交换彼此掌握的路由信息，以便创建和动态维护路由器中的转发表，使得转发表能够及时更新。  </li>
+<li>讨论路由器转发分组时，可以把单一的网络简化为一条<strong>链路</strong>，而路由器成为核心部分的<strong>节点</strong>。</li>
+<li>主机与路由器的链路也只有在转发分组时才被占用，其余时间可以被别的主机使用。  </li>
+<li>路由器暂时存储的是一个个短分组，而不是整个长报文，短分组暂存在路由器的存储器（内存）而不是存储在磁盘，保证了较高的转换速率。</li>
+<li>分组转换只有在传输数据时才占用通信资源，分组在传输时逐段地占用通信资源，省去了建立连接和释放连接的开销，数据的传输速率更高。</li>
+<li>如果有某些节点或者链路出现问题，在各个路由器中运行的路由选择<strong>协议</strong>能够自动找到转发分组的最合适路径。</li>
+<li>总结，分组交换的优点：  <ul>
+<li><strong>高效</strong>：在分组传输的过程中动态分配传输带宽，对通信链路逐段占用。</li>
+<li><strong>灵活</strong>：为每一个分组独立地选择最合适的转发路由。  </li>
+<li><strong>迅速</strong>：以分组作为传送单位，不先建立连接就能够向其他主机发送分组。</li>
+<li><strong>可靠</strong>：保证可靠性的网络协议：分布式多路由的分组交换网，使网络有很好的生存性。  </li>
+</ul>
+</li>
+<li>带来的问题：  <ul>
+<li><strong>时延</strong>：分组在各路由器存储转发时需要排队。</li>
+<li><strong>带宽</strong>：分组交换不像电路交换那样通过建立连接来保证通信时所需的各种资源，因而无法确保通信时端到端所需的带宽。</li>
+<li><strong>开销</strong>：各分组必须携带控制信息。</li>
+</ul>
+</li>
+<li>三种交换方式的主要特点：  <ul>
+<li><strong>电路交换</strong> —— 整个报文的比特流连续地从源点直达终点，好像在一个管道中传送。</li>
+<li><strong>报文交换</strong> —— 整个报文先传送到相邻节点，全部存储下来后找到转发表，转发到下一个节点。</li>
+<li><strong>分组交换</strong> —— 单个分组（报文的一部分）传送到相邻节点，存储下来后查找转发表，转发到下一个节点。  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="14">1.4 计算机网络在我国的发展（简单了解即可）</h2>
+<ol>
+<li>最早着手建设专用计算机广域网的是铁道部。  </li>
+<li>1994 年 4 月 20 日我国用 64 kbit/s 专线正式连入互联网，从此，我国被国际上正式承认为接入互联网的国家。  </li>
+<li>同年五月中国科学院高能物理研究所设立了我国的第一个万维网服务器。</li>
+<li>同年九月中国公用计算机互联网 CHINANET 正式启动。</li>
+</ol>
+<h2 id="15">1.5 计算机网络的定义</h2>
+<h3 id="151">1.5.1 计算机网络的定义</h3>
+<ol>
+<li>计算机网络主要是由一些通用的、可编程的硬件互连而成的，而这些硬件并非专门用来实现某一特定目的的（例如，传送数据或视频信号）。这些可编程的硬件能够用来传送多种不同类型的数据，并能支持广泛的和日益增长的应用。  <ul>
+<li>计算机网络所连接的硬件，并不限于计算机，包括智能手机或智能电视；</li>
+<li>计算机网络并非专门用来传送数据，而是能够支持多种应用。  </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上述“可编程的硬件”表明这种硬件一定含有中央处理器 CPU。  </p>
+</div>
+</li>
+</ol>
+<h3 id="152">1.5.2 几种不同类别的计算机网络</h3>
+<ol>
+<li><strong>按照网络的作用范围进行分类</strong>  <ul>
+<li><strong>广域网 WAN</strong>（Wide Area Network）（<strong>远程网</strong> long haul network）<br />
+    作用范围通常几十到几千公里，是互联网的核心部分，任务是长距离运送主机所发送的数据。连接广域网各节点交换机的链路一般都是高速链路，具有较大的通信容量。  </li>
+<li><strong>城域网 MAN</strong>（Metropolitan Area Network）<br />
+    作用范围一般是一个城市，可跨越几个街区甚至整个城市，其作用距离约为 5 ～ 50 km。城域网可被一个或几个单位拥有，也可以是一种公用设施，用来将多个局域网互连。目前很多城域网采用的是以太网技术。  </li>
+<li><strong>局域网 LAN</strong>（Local Area Network）<br />
+    一般用微型计算机或工作站通过高速通信线路相连，但地理上则局限在较小的范围。  </li>
+<li><strong>个人区域网 PAN</strong>（Personal Area Network）（<strong>无线个人区域网 WPAN</strong>（Wireless PAN））  <br />
+    一般就是个人使用的电子设备用无线技术连接起来的网络，范围更小，大约 10 m 左右。  </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>若中央处理器之间的距离非常近，则一般就称为<strong>多处理系统</strong>。  </p>
+</div>
+</li>
+<li><strong>按照网络的使用者进行分类</strong>  <ul>
+<li><strong>公用网</strong>（public network）<br />
+    电信公司出资建造的大型网络。  </li>
+<li><strong>专用网</strong>（private network）<br />
+    某个部门为满足本单位的特殊业务工作的需要而建造的网络。  </li>
+</ul>
+</li>
+<li><strong>用来把用户接入到互联网的网络</strong><br />
+<strong>接入网 AN</strong>（Access Network）（<strong>本地接入网</strong>或<strong>居民接入网</strong>）<br />
+    实际上就是本地 ISP 所拥有的网络，接入网既不是互联网的核心部分，也不是互联网的边缘部分。接入网由某个端系统连接到本地 ISP 的第一个路由器之间的一些物理链路组成。长度在几百米到几公里之间。很多接入网仍然属于局域网。接入网只是起到让用户能够与互联网连接的“桥梁”作用。  </li>
+</ol>
+<h2 id="16">1.6 计算机网络的性能</h2>
+<h3 id="161">1.6.1 计算机网络的性能指标</h3>
+<ol>
+<li><strong>速率</strong>  <ul>
+<li>计算机发送的信号都是数字形式的。</li>
+<li><strong>比特</strong>（bit）来源于 binary digit（<strong>二进制数字</strong>），比特就是二进制数字的一个 1 或 0，比特也是信息论中的<strong>信息量的单位</strong>。</li>
+<li><strong>速率</strong>指的是<strong>数据的传送速率</strong>（<strong>数据率</strong>（data rate）或<strong>比特率</strong>（bit rate））。</li>
+<li>单位是 bit/s（比特每秒）（或 b/s，bps，即 bit per second）。数据率较高时，就在 bit/s 前面加上一个字母，例如，k (kilo) = <span class="arithmatex">\(10^3\)</span> = 千，M (Mega) = <span class="arithmatex">\(10^6\)</span> = 兆，G (Giga) = <span class="arithmatex">\(10^9\)</span> = 吉，T (Tera) = <span class="arithmatex">\(10^{12}\)</span> = 太，P (Peta) = <span class="arithmatex">\(10^{15}\)</span> = 拍，E (Exa) = <span class="arithmatex">\(10^{18}\)</span> = 艾，Z (Zetta) = <span class="arithmatex">\(10^{21}\)</span> = 泽，Y (Yotta) = <span class="arithmatex">\(10^{24}\)</span> = 尧。<span class="arithmatex">\(4 \times 10^{10} \ bit/s\)</span> 记为 40 Gbit/s。  </li>
+<li>当提到网络的速率时，往往指的是<strong>额定速率</strong>或<strong>标定速率</strong>，也就是数据传输的理想情况。  </li>
+</ul>
+</li>
+<li><strong>带宽</strong>  <ul>
+<li>“<strong>带宽</strong>”有以下两种不同的意义：  <ul>
+<li>带宽本来就是指<strong>某个信号具有的频带宽度</strong>。信号的带宽是指该信号所包含的各种不同频率成分所占据的频率范围。单位是<strong>赫</strong>（或<strong>千赫</strong>、<strong>兆赫</strong>、<strong>吉赫</strong>）。表示某信道允许通过的信号频率范围就称为该信道的<strong>带宽</strong>（或<strong>通频带</strong>）。  </li>
+<li>计算机网络中，带宽用来表示网络中某<strong>通道</strong>传送数据的能力，因此网络带宽表示在<strong>单位时间</strong>内网络中的某信道所能通过的“<strong>最高数据率</strong>”。单位是<strong>数据率的单位 bit/s，是“比特每秒”</strong>。  </li>
+<li>前者是<strong>频域</strong>称谓，后者为<strong>时域</strong>称谓，本质是相同的，一条通信链路的“带宽”越宽，其所能传输的“最高数据率”也越高。  </li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>在计算机领域，习惯上，千 = k = <span class="arithmatex">\(2^{10}\)</span> = 1024，兆 = M = <span class="arithmatex">\(2^{20}\)</span>，吉 = G = <span class="arithmatex">\(2^{30}\)</span>，太 = T = <span class="arithmatex">\(2^{40}\)</span>，拍 = P = <span class="arithmatex">\(2^{50}\)</span>，艾 = E = <span class="arithmatex">\(2^{60}\)</span>，泽 = Z = <span class="arithmatex">\(2^{70}\)</span>，尧 = Y = <span class="arithmatex">\(2^{80}\)</span>。计算机中的数据量往往用字节 B 作为度量的单位（B 代表 byte）。通常 1 B = 8 bit。  </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>15 GB 数据块的大小是 <span class="arithmatex">\(15 \times 2^{30} \times 8 \ bit\)</span>，而不是 <span class="arithmatex">\(15 \times 10^9 \times 8 \ bit\)</span>，但是 10 Gbit/s 的速率则表示 <span class="arithmatex">\(10 \times 10^9 \ bit/s\)</span>。  </p>
+</div>
+</div>
+<p>计算机领域，所有的这些单位都使用大写字母，但是在通信领域，只有 “1000” 使用小写 “k”，其余都是大写。  </p>
+</li>
+<li><strong>吞吐量</strong>  <ul>
+<li><strong>吞吐量</strong>（throughput）表示在<strong>单位时间</strong>内通过某个网络（或信道、接口）的<strong>实际数据量</strong>。  </li>
+<li>吞吐量受网络带宽或网络额定速率的限制。  </li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>一个 1 Gbit/s 的以太网，就是说其额定速率是 1 Gbit/s，那么这个数值也是该以太网的吞吐量的绝对上限值。但是实际的吞吐量可能只有 100 Mbit/s。  </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>有时候吞吐量还可用每秒传送的字节数或帧数来表示。  </p>
+</div>
+<ul>
+<li>接入到互联网的主机的实际吞吐量，取决于互联网的具体情况。  <ul>
+<li>第一种情况：假定主机 A 和服务器 B 接入到互联网的链路速率分别是 100 Mbit/s 和 1 Gbit/s 。如果互联网的各链路的容量都满足，那么 A 和 B 交换数据时，吞吐量显然是 100 Mbit/s，这种时候的吞吐量受主机 A 的限制，因为主机 A 接收数据的速率较小。  </li>
+<li>第二种情况：继续第一种情况的假定，如果服务器 B 被 100 个用户同时连接，那么链路容量要被 100 个用户平分，每个用户只有 10 Mbit/s 的带宽，主机 A 连接到服务器 B 的吞吐量就只有 10 Mbit/s。  </li>
+</ul>
+</li>
+<li>如果互联网的某处发生了严重的拥塞，则可能导致主机 A 暂时收不到服务器发来的数据，那么吞吐量就是零。  </li>
+</ul>
+</li>
+<li><strong>时延</strong>  <ul>
+<li><strong>时延</strong>（delay 或 latency）（<strong>延迟</strong>或<strong>迟延</strong>）是指数据（一个报文或分组，甚至比特）从网络（或链路）的一端传送到另一端所需的时间。  </li>
+<li>时延由以下部分组成：  <ul>
+<li><strong>发送时延</strong> (transmission delay)  <ul>
+<li><strong>是主机或路由器发送数据帧所需要的时间</strong>。  </li>
+<li>计算公式：<span class="arithmatex">\(发送时延 = \frac{数据帧长度(bit)}{发送速率(bit/s)}\)</span></li>
+</ul>
+</li>
+<li><strong>传播时延</strong> (progagation delay)<ul>
+<li><strong>是电磁波在信道中传播一定的距离需要花费的时间</strong>。</li>
+<li>计算公式：<span class="arithmatex">\(传播时延 = \frac{信道长度(m)}{电磁波在信道上的传播速率(m/s)}\)</span></li>
+</ul>
+</li>
+</ul>
+<details class="note">
+<summary>上述两种时延的区分</summary>
+<p>发送时延发生在机器内部的发送器中，<strong>与传输信道的长度（或信号传送的距离）没有关系</strong>。<br />
+传播时延发生在机器外部的传输信道媒体上，<strong>与信号的发送速率无关，信号传送的距离越远，传播时延就越大</strong>。</p>
+</details>
+<ul>
+<li><strong>处理时延</strong> <ul>
+<li>主机或路由器在接收到分组时要花费一定的时间去处理，例如分析分组的首部，从分组中提取数据部分，进行差错检验或查找转发表。</li>
+</ul>
+</li>
+<li><strong>排队时延</strong><ul>
+<li>分组在经过网络传输是，要经过许多路由器，但分组在进入路由器后要现在输入队列中排队等待处理。在路由器确定了转发接口后，还要在输出队列中排队等待转发。</li>
+<li>排队时延的长短往往取决于网络当时的通信量。</li>
+<li>当网络的通信量很大时会发生队列溢出，使分组丢失，此时的排队时延无限大。</li>
+</ul>
+</li>
+<li>总时延 = 发送时延 + 传播时延 + 处理时延 + 排队时延</li>
+<li>一般来说，小时延的网络优于大时延的网络，某些情况下，一个低速率、小时延的网络可能优于高速率但大时延的网络。</li>
+</ul>
+</li>
+<li><strong>对于高速网络链路，提高的仅仅是数据的发送速率而不是比特在链路上的传播速率</strong>。</li>
+<li>荷载信息的电磁波在通信线路上的传播速率取决于通信线路的介质材料。</li>
+<li><strong>提高数据的发送速率只是减小了数据的发送时延</strong>。</li>
+</ul>
+</li>
+<li><strong>时延带宽积</strong><ul>
+<li>计算公式 = 传播时延 <span class="arithmatex">\(\times\)</span> 带宽</li>
+<li>时延带宽积表示的是链路可容纳多少个比特，类似于计算体积。</li>
+<li>又称为<strong>以比特为单位的链路长度</strong>。</li>
+</ul>
+</li>
+<li><strong>往返时间 RTT</strong><ul>
+<li>数据传输不仅仅是单方向传输而是双向交互的，因此会存在往返时间 RTT。</li>
+<li>互联网中，往返时间包括各中间节点的处理时延、排队时延以及转发数据时的发送时延。</li>
+</ul>
+</li>
+<li><strong>利用率</strong>  <ul>
+<li><strong>利用率</strong>有信道利用率和网络利用率两种。<ul>
+<li>信道利用率指的是某信道有百分之几的时间是被利用的（有数据通过）。</li>
+<li>网络利用率指的是全网络的信道利用率的加权平均值。</li>
+</ul>
+</li>
+<li>某信道利用率增大时，该信道引起的时延也就迅速增加。</li>
+<li>令 <span class="arithmatex">\(D_0\)</span> 表示网络空闲时的时延，<span class="arithmatex">\(D\)</span> 表示网络当前的时延，现在的网络利用率为 <span class="arithmatex">\(U\)</span>，则有<br />
+<span class="arithmatex">\(D = \frac{D_0}{1-U}\)</span></li>
+<li><strong>信道利用率或网络利用率过高就会产生非常大的时延</strong>。</li>
+</ul>
+</li>
+</ol>
+<h3 id="162">1.6.2 计算机网络的非性能特征</h3>
+<ol>
+<li><strong>费用</strong><br />
+    网络的价格（设计和实现的费用）都需要考虑。</li>
+<li><strong>质量</strong>
+    网络的质量取决于网络中所有构件的质量，以及这些构件是怎样组成网络的。</li>
+<li><strong>标准化</strong><br />
+    网络的硬件和软件的设计需要按照国际标准或遵循特定的专用网络标准。</li>
+<li><strong>可靠性</strong>
+    可靠性与网络的质量和性能都有密切关系。</li>
+<li><strong>可拓展性和可升级性</strong>
+    拓展（规模扩大）升级（性能和版本的提高）</li>
+<li><strong>易于管理和维护</strong></li>
+</ol>
+<h2 id="17">1.7 计算机网络体系结构</h2>
+<h3 id="171">1.7.1 计算机网络体系结构的形成</h3>
+<ul>
+<li>ARPANET 提出了<strong>“分层”</strong>设计的方法。</li>
+<li>1974 年，美国的 IBM 公司宣布了<strong>系统网络体系结构 SNA</strong>。现在用 IBM 大型机构构建的专用网络仍在使用 SNA。</li>
+</ul>
+<h3 id="172">1.7.2 协议与划分层次</h3>
+<ul>
+<li><strong>为进行网络中的数据交换而建立的规则、标准或约定</strong>称为<strong>网络协议</strong>。由三个要素组成：  <ul>
+<li><strong>语法</strong> 数据与控制信息的结构或格式；</li>
+<li><strong>语义</strong> 需要发出何种控制信息，完成何种动作以及做出何种响应；</li>
+<li><strong>同步</strong> 时间实现顺序的详细说明。</li>
+</ul>
+</li>
+<li><strong>计算机网络的各层及其协议的集合</strong>就是网络的<strong>体系结构</strong>。</li>
+</ul>
+<h3 id="173">1.7.3 具有五层协议的体系结构</h3>
+<ul>
+<li><strong>应用层</strong>  <ul>
+<li>体系结构的最高层。</li>
+<li>任务是<strong>通过应用进程间的交互来完成特定网络应用</strong>。</li>
+<li>定义的是<strong>应用进程间通信和交互的规则</strong>。</li>
+<li><strong>进程</strong>就是主机中<strong>正在运行的程序</strong>。</li>
+<li>应用层协议很多，例如域名系统 DNS，支持万维网应用的 HTTP 协议，支持电子邮件的 SMTP 协议。</li>
+<li>应用层交互的数据单元称为<strong>报文</strong>。</li>
+</ul>
+</li>
+<li><strong>运输层</strong><ul>
+<li>任务是负责向<strong>两台主机中进程之间的通信</strong>提供<strong>通用的数据传输</strong>服务。</li>
+<li>主要使用两种协议：  <ul>
+<li><strong>传输控制协议 TCP</strong> 提供面向连接的、可靠的数据传输服务，数据传输的单位是<strong>报文段</strong>。</li>
+<li><strong>用户数据报协议 UDP</strong> 提供无连接的<strong>尽最大努力</strong>的数据传输服务，数据传输的单位是<strong>用户数据报</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>网络层（网际层或 IP 层）</strong><ul>
+<li>任务是负责<strong>为分组交换网上的不同主机提供通信服务</strong>。</li>
+<li>在发送数据时，网络层把运输层产生的报文段或用户数据报段封装成<strong>分组</strong>或<strong>包</strong>进行传送。</li>
+<li>在 TCP/IP 体系中，分组也称为<strong> IP 数据报</strong>。</li>
+<li><strong>无论在哪一层传送的数据单元，都可笼统地用“分组”来表示</strong>。</li>
+<li>具体任务有两个：  <ul>
+<li>通过一定的算法，为每一个路由器生成转发表。</li>
+<li>路由器接收分组之后，依据转发表将分组转发到下一个路由器。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>（数据）链路层</strong><ul>
+<li>数据链路层会将网络层交下来的 IP 数据报<strong>组装成帧</strong>，在相邻两个节点间的链路上传送<strong>帧</strong>。每一帧包括数据和必要的<strong>控制信息</strong>。</li>
+<li>控制信息还使接收端能够检测收到的帧有无差错。出现差错，则可以丢弃这个帧。并且数据链路层还要纠正出现的差错。</li>
+</ul>
+</li>
+<li><strong>物理层</strong><ul>
+<li>所传数据的单位是<strong>比特</strong>。</li>
+</ul>
+</li>
+<li>OSI 参考模型把对等层次之间传送的数据单元称为该层的<strong>协议数据单元 PDU</strong>。</li>
+</ul>
+<h3 id="174">1.7.4 实体、协议、服务和服务访问点</h3>
+<ul>
+<li><strong>实体</strong>表示<strong>任何发送或接收信息的硬件或软件进程</strong>。</li>
+<li><strong>协议是控制两个对等实体（或多个实体）进行通信的规则的集合</strong>。</li>
+<li><strong>在协议的控制下，两个对等实体间的通信使得本层能够向上一层提供服务。要实现本层协议，还需要使用下面一层所提供的服务</strong>。</li>
+<li><strong>使用本层服务的实体只能看见服务而无法看见下面的协议</strong>。</li>
+<li><strong>协议是水平的</strong>，<strong>服务是垂直的</strong>。</li>
+<li><strong>服务访问点 SAP</strong> 在同一系统中相邻两层的实体进行交互的地方。</li>
+<li>OSI 把层与层之间交换的数据的单位称为<strong>服务数据单元 SDU</strong>。</li>
+</ul>
+<h3 id="175-tcpip">1.7.5 TCP/IP 的体系结构</h3>
+<div class="arithmatex">\[ 
+abc 
+\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
