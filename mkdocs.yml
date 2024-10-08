@@ -66,6 +66,23 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+
+# extra_javascipt:
+  # - docs/javascripts/katex.js
+  # - https://unpkg.com/katex@0/dist/katex.min.js
+  # - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  # - docs/javascripts/mathjax.js
+  # - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+
+
+# extra_css:
+#   - https://unpkg.com/katex@0/dist/katex.min.css
 # extra:
 #   - stylesheets/extra.css
 #   - javascripts/extra.js
@@ -74,4 +91,9 @@ nav:
   - About: about.md
   - Note:
     - 计算机网络: 
-      - 第一章: note/计算机网络/chapter_1.md
+      - 笔记:
+        - 第一章: note/计算机网络/笔记/chapter_1.md
+      - 作业:
+        - 第一次: note/计算机网络/作业/作业1.md
+    - CPU 学习:
+      - 指令系统: note/CPU/instruction.md
