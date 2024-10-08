@@ -91,9 +91,6 @@ nav:
   - About: about.md
   - Note:
     - 计算机网络: 
-      - 笔记:
-        - 第一章: note/计算机网络/笔记/chapter_1.md
-      - 作业:
-        - 第一次: note/计算机网络/作业/作业1.md
+      - 第一章: note/计算机网络/chapter_1.md
     - CPU 学习:
       - 指令系统: note/CPU/instruction.md
