@@ -91,3 +91,10 @@ nav:
       - 第一章: note/计算机网络/chapter_1.md
     - CPU 学习:
       - 指令系统: note/CPU/instruction.md
+    - 网络安全: note/网络安全/网络安全.md
+    - 计算机系统:
+      - 课程笔记: 
+        - 计算机系统III: note/计算机系统/课程笔记/计算机系统III/计算机系统III.md
+  - 考研:
+    - 英语:
+      - 词汇: note/考研/英语/词汇.md
